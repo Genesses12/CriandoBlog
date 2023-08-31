@@ -1,0 +1,15 @@
+.container__menu-bar > ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container__menu-bar > ul > li {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container__menu-bar >ul > li > a > img {
+    align-items: center;
+    margin-right: 5px;
+    
+}

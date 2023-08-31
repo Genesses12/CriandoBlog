@@ -1,0 +1,6 @@
+
+ /* Estilo do conteúdo dentro do footer */
+  .footer-content {
+    max-width: 600px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }

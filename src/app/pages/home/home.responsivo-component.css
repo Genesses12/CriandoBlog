@@ -1,0 +1,16 @@
+
+@media screen and (max-width: 600px) {
+    .articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        font-size: 20px;
+    }
+    .articles__others{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-top: 58px;
+    }
+}
