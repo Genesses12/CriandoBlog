@@ -6,7 +6,8 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./big-card.component.css']
 })
 export class BigCardComponent {
- 
+@Input()
+ Id:string = '0';
 @Input()
  fotoCover : string ="";
  @Input()

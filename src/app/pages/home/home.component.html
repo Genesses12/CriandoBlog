@@ -1,25 +1,80 @@
-<app-menu-title></app-menu-title>
+<app-menu-title newTitle="BLOG TECNOLOGIA"></app-menu-title>
 
 <div class="articles">
     <div class="articles__main">
-        <app-big-card fotoCover="https://appmaster.io/api/_files/qAZqPSz8tU7u7kAJZTc8yW/download"
+
+        <app-big-card 
+        Id="1"
+        fotoCover="https://appmaster.io/api/_files/qAZqPSz8tU7u7kAJZTc8yW/download"
         cardTitle="Qual a diferença de React Vue e  Angular?"
-        cardDescricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        cardDescricao="Todas são ferramentas que chegam ao mesmo resultado porém ada um com sua forma, não existe melhor e nem pior, vai de acordo com sua necessidade."
         ></app-big-card>
     </div>
     <div class="articles__others">
-        <app-small-card imageSmall="https://sujeitoprogramador.com/wp-content/uploads/2019/04/react.png"
-        smallTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+        <app-small-card
+        Id="2"
+        imageSmall="https://sujeitoprogramador.com/wp-content/uploads/2019/04/react.png"
+        smallTitle="React é uma biblioteca JavaScript para construção de interfaces de usuário."
         ></app-small-card>
-        <app-small-card imageSmall="https://vidafullstack.com.br/wp-content/uploads/2021/07/versao-12-angular.png" 
-        smallTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></app-small-card>
-        <app-small-card imageSmall="https://www.alura.com.br/artigos/assets/vue3-conhecendo-mais-de-perto/logo-do-vuejs.png"
-        smallTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></app-small-card>
+
+        <app-small-card
+        Id="3"
+        imageSmall="https://vidafullstack.com.br/wp-content/uploads/2021/07/versao-12-angular.png" 
+        smallTitle="O Angular usa a linguagem TypeScript como padrão, ao invés do JavaScript."></app-small-card>
+
+        <app-small-card 
+        Id="4"
+        imageSmall="https://www.alura.com.br/artigos/assets/vue3-conhecendo-mais-de-perto/logo-do-vuejs.png"
+        smallTitle="Para que serve o vue?
+        O Vue. js serve para criar aplicações SPA e desenvolver vários outros formatos de interfaces."></app-small-card>
     </div>
 </div> 
  <section>
-    <app-noticia-nova imageFooter="https://blog.logrocket.com/wp-content/uploads/2021/09/ultimate-guide-SVGs-vue-js.png"
-    imgTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit."></app-noticia-nova>  
+    <app-noticia-nova 
+    Id="5"
+    imageFooter="https://blog.logrocket.com/wp-content/uploads/2021/09/ultimate-guide-SVGs-vue-js.png"
+    imgTitle="O Vue.js é considerado um dos melhores frameworks JavaScript para o desenvolvimento de interfaces rápidas com foco na experiência do usuário. Parte desse mérito se deve à sua versatilidade e por ser uma solução completa, com CLI própria."></app-noticia-nova>  
  </section>
- <a href="/src/app/pages/content/content.component.html">PROXIMA PÁGINA >> </a>
+ 
+ <app-menu-title newTitle="GAMES DO MOMENTO"></app-menu-title>
+
+ <div class="articles">
+     <div class="articles__main">
+ 
+         <app-big-card 
+         Id="6"
+         fotoCover="https://cdn.ligadosgames.com/imagens/zelda-oot.jpg"
+         cardTitle="The Legend of Zelda"
+         cardDescricao="jogo da década de 90 conseguiu ser TÃO BOM.nunca saberemos. Ocarina of Time explorou ao máximo todos os elementos da série Zelda "
+         ></app-big-card>
+     </div>
+     <div class="articles__others">
+ 
+         <app-small-card
+         Id="7"
+         imageSmall="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/640px-Mario_Series_Logo.svg.png"
+         smallTitle="Super Mario World foi, para muitos que nasceram na década de 90."
+         ></app-small-card>
+ 
+         <app-small-card
+         Id="8"
+         imageSmall="https://cdn.ligadosgames.com/imagens/gta5-top20.jpg" 
+         smallTitle="GTA V dispensa apresentações. A obra-prima da Rockstar é o jogo mais caro da história. "></app-small-card>
+ 
+         <app-small-card 
+         Id="9"
+         imageSmall="https://cdn.ligadosgames.com/imagens/minecraft.jpg"
+         smallTitle="Minecraft encantou milhões de crianças e adultos no mundo inteiro com sua jogabilidade fofa e viciante. "></app-small-card>
+     </div>
+ </div> 
+  <section>
+     <app-noticia-nova 
+     Id="10"
+     imageFooter="https://www.leagueoflegends.com/static/open-graph-b580f0266cc3f0589d0dc10765bc1631.jpg"
+     imgTitle="O grande nome dos MOBAs atuais, League of Legends continua crescendo em popularidade e não há previsão de parada. O jogo pegou as mecânicas centrais de outros títulos."></app-noticia-nova>  
+  </section>
+  
+  
+ 
  

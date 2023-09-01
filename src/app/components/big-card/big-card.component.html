@@ -7,10 +7,10 @@
 
     </div>
     <div class="big__card__titulo">
-        <h1><a href="https://angular.io/tutorial/first-app" target="_blank">{{cardTitle}}</a></h1>
+        <h1><a [routerLink]="['content',Id]">{{cardTitle}}</a></h1>
     </div>
     <div class="big__card__descricao">
         <p>
-            <a href="">{{cardDescricao}}</a> </p>
+            <a [routerLink]="['content',Id]" >{{cardDescricao}}</a> </p>
     </div>
 </div>

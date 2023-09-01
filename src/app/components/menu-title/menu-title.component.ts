@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu-title',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
                './menu-title-responsivo.component.css'  ]
 })
 export class MenuTitleComponent {
- imgVue = 'https://appmaster.io/api/_files/qAZqPSz8tU7u7kAJZTc8yW/download/';
+ @Input()
+ newTitle:string ="";
 }

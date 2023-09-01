@@ -11,5 +11,7 @@ export class NoticiaNovaComponent {
   imageFooter:string = "";
   @Input()
   imgTitle:string ="";
+  @Input()
+  Id:string = "0"
 
 }

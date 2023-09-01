@@ -1,16 +1,37 @@
-import { Component,Input } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { dataFake} from 'src/app/data/data.Fake';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
-export class ContentComponent {
-  @Input()
-  Foto_img: string ="https://i.ytimg.com/vi/CtDknAaW2dM/sddefault.jpg";
-  @Input()
-  contentTitle:string="Comtemplem o Mago";
-  @Input()
-  contentDescricao:string  = "O Mago mais podero que já existiu no mundo"
+export class ContentComponent implements OnInit {
+  fotoCover: string ="";
+  contentTitle:string="";
+  contentDescricao:string  = ""
+  private id: string | null= "0"
 
+  constructor(
+    private route:ActivatedRoute
+  ) {}
+
+ngOnInit(): void {
+
+this.route.paramMap.subscribe(value =>
+     this.id = value.get("id") 
+  )
+  this.setValuesToComponent(this.id)
 }
+ 
+setValuesToComponent(id:string | null){
+        const result = dataFake.filter( article => article.id == id)[0]
+           
+        this.contentTitle = result.title
+        this.contentDescricao = result.descripttion
+        this.fotoCover = result.fotoCover
+          
+  
+        }
+ }

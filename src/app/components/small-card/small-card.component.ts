@@ -7,8 +7,10 @@ import { Component,Input } from '@angular/core';
               './small-card-responsive.component.css']
 })
 export class SmallCardComponent {
-  @Input()
+@Input()
  imageSmall: string = "";
  @Input()
  smallTitle: string ="";
+ @Input()
+ Id: string="0";
 }
