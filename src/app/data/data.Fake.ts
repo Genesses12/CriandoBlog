@@ -47,7 +47,7 @@ export const dataFake = [
     },
     {
         "id" : "8",
-        "title": "React e suas vantagens",
+        "title": "GTA V",
         "fotoCover":"https://cdn.ligadosgames.com/imagens/gta5-top20.jpg",
         "descripttion" : "GTA V dispensa apresentações. A obra-prima da Rockstar é o jogo mais caro da história."
     },

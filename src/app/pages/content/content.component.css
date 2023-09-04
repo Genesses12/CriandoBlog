@@ -22,6 +22,9 @@ border: 5px solid gray;
 
 
 }
+.content__title > h1{
+     font-size: 28px;
+}
 .content_description > p{
     display: flex;
     justify-content: center;
